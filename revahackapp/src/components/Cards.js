@@ -19,6 +19,13 @@ function Cards() {
                         label='Label'
                         path='./services'
                         />
+                        <CardItem 
+                        src="images/img1.jpg"
+                        business_name="This is dummy data"
+                        business_tags="tag1 tag2 tag3"
+                        label='Label'
+                        path='./services'
+                        />
                     </ul>
                 </div>
             </div>
