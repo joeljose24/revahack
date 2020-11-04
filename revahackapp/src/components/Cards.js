@@ -7,12 +7,13 @@ function Cards() {
             <h1>
                 Check out these EPIC BUSINESS VENTURES!
             </h1>
-            <div className="cards__container">
-                <div className="cards__wrapper">
-                    <ul className="cards__items">
+            <div className=".card_outer">
+                <div className="">
+                    <ul className="">
                         <CardItem 
                         src="images/img1.jpg"
-                        text="This is dummy data"
+                        business_name="This is dummy data"
+                        business_tags="tag1 tag2 tag3"
                         label='Label'
                         path='./services'
                         />
