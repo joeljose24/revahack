@@ -5,18 +5,14 @@ import "./Cards.css";
 function CardItem(props) {
   return (
     <Link className="" to={props.path}>
-      <div className="container card_outer">
-        <div className="row">
-          <div className="col">
+      <div className="card_outer">
+          <div className="">
             <h5 className=""> {props.business_name}</h5>
           </div>
-          <figure className="col order-last">
+          <figure className="">
             <img src={props.src} alt="Travel" className="img" />
           </figure>
-        </div>
-        <div className="row">
             <p className="col-3">{props.business_tags}</p>
-        </div>
       </div>
     </Link>
   );
