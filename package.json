@@ -20,10 +20,10 @@
     "nodemon": "^2.0.6"
   },
   "scripts": {
-    "client-install": "npm install --prefix client",
+    "revahackapp-install": "npm install --prefix revahackapp",
     "start": "node server.js",
     "server": "nodemon server.js",
-    "client": "npm start --prefix client",
+    "client": "npm start --prefix revahackapp",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {

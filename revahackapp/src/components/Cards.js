@@ -5,14 +5,13 @@ import './Cards.css'
 
 function Cards() {
     return (
-        <div className='cards'>
+        <div className=''>
             <h1>
                 Check out these EPIC BUSINESS VENTURES!
             </h1>
-            <div className=".card_outer">
+            <div className="">
                 <div className="">
-                    <ul className="">
-                        <CardItem 
+                        <CardItem className="card_size"
                         src="images/img1.jpg"
                         business_name="This is dummy data"
                         business_tags="tag1 tag2 tag3"
@@ -40,7 +39,6 @@ function Cards() {
                         label='Label'
                         path='./services'
                         />
-                    </ul>
                 </div>
             </div>
             

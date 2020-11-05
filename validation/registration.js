@@ -9,6 +9,10 @@ module.exports = function validationRegisterInput(data) {
   data.password = !isEmpty(data.password) ? data.password : "";
   data.repassword = !isEmpty(data.repassword) ? data.repassword : "";
 
+  //for business registrations
+  data.bis_name = !isEmpty(data.bis_name) ? data.bis_name: "";
+  data.bis_add = !isEmpty(data.bis_add) ? data.bis_add: "";
+
   //Check name field
   if (Validator.isEmpty(data.name)) {
     errors.name = "Name is required!";

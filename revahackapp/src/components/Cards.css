@@ -11,6 +11,10 @@
   font-size: large;
 }
 
+.card_outer{
+  width: 60%;
+}
+
 @media (min-width: 700px) {
   .card_outer {
       width: 700px;
