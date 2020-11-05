@@ -5,11 +5,11 @@ const jwt = require("jsonwebtoken");
 const keys = require("../../config/keys");
 
 // Load input validation
-const validateRegisterInput = require("../../validation/register");
+const validateRegisterInput = require("../../validation/registration");
 const validateLoginInput = require("../../validation/login");
 
 // Load User model
-const User = require("../../models/User");
+const User = require("../../data_schema/Users");
 
 // @route POST api/users/register
 // @desc Register user
@@ -66,7 +66,7 @@ router.post("/login", (req, res) => {
   User.findOne({ email }).then((user) => {
     // Check if user exists
     if (!user) {
-      return res.status(404).json({ emailnotfound: "Email not found" });
+      return res.status(404).json({ emailnotfound: "Email not found. Please sign up." });
     }
     // Check password
     bcrypt.compare(password, user.password).then((isMatch) => {
