@@ -1,0 +1,24 @@
+.card_outer {
+  width: 60%;
+  margin: 16px auto;
+  border: 1px solid #eee;
+  box-shadow: 0 3px 4px #ccc;
+  padding: 16px;
+  text-align: left;
+  text-decoration: none;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: black;
+  font-size: large;
+}
+
+@media (min-width: 500px) {
+  .card_outer {
+      width: 500px;
+  }
+}
+
+.img {
+  width: auto;
+  height: 120px;
+  margin-left: 300px;
+}
